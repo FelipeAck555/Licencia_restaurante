@@ -2,8 +2,8 @@
 <definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_1aootxa" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.15.2" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.19.0">
   <decision id="ClasificacionIr" name="ClasificacionIr" camunda:historyTimeToLive="180">
     <decisionTable id="DecisionTable_1ezgtux">
-      <input id="Input_1" label="Fallas en la lista" biodi:width="192" camunda:inputVariable="numero_errores">
-        <inputExpression id="InputExpression_1" typeRef="integer">
+      <input id="Input_1" label="Fallas en la lista" biodi:width="192" camunda:inputVariable="errores">
+        <inputExpression id="InputExpression_1" typeRef="long">
           <text></text>
         </inputExpression>
       </input>

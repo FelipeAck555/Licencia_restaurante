@@ -1,7 +1,7 @@
 {
   "components": [
     {
-      "text": "# Formulario camara y comercio",
+      "text": "# Datos basicos de la solicitud",
       "label": "Text view",
       "type": "text",
       "layout": {
@@ -32,15 +32,25 @@
       "description": "Primer nombre y apellido"
     },
     {
-      "label": "Sector comercial",
-      "type": "textfield",
+      "label": "Cedula",
+      "type": "number",
       "layout": {
-        "row": "Row_0w6ls94",
+        "row": "Row_1tfpkze",
         "columns": null
       },
-      "id": "Field_1753hyc",
-      "key": "sector_name",
-      "description": "(Carnes, juegos, entretenimiento, deportes, comercio, etc...)"
+      "id": "Field_07c1aai",
+      "key": "id_name"
+    },
+    {
+      "label": "Estrato",
+      "type": "number",
+      "layout": {
+        "row": "Row_1njfr7h",
+        "columns": null
+      },
+      "id": "Field_1vlsts2",
+      "key": "estrato",
+      "defaultValue": 3
     },
     {
       "label": "Activos",
@@ -54,6 +64,16 @@
       "description": "En pesos"
     },
     {
+      "label": "¿Tiene RUT?",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_05zu3sl",
+        "columns": null
+      },
+      "id": "Field_17s7ygv",
+      "key": "rut_check"
+    },
+    {
       "label": "¿Tendra musica?",
       "type": "checkbox",
       "layout": {
@@ -61,7 +81,7 @@
         "columns": null
       },
       "id": "Field_1i6e2xg",
-      "key": "musica",
+      "key": "musica_check",
       "readonly": false
     }
   ],
@@ -69,7 +89,7 @@
   "id": "formulario",
   "exporter": {
     "name": "Camunda Modeler",
-    "version": "5.15.0"
+    "version": "5.15.2"
   },
   "executionPlatform": "Camunda Platform",
   "executionPlatformVersion": "7.19.0",
