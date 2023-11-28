@@ -1,0 +1,77 @@
+{
+  "components": [
+    {
+      "text": "# Formulario camara y comercio",
+      "label": "Text view",
+      "type": "text",
+      "layout": {
+        "row": "Row_1huiwgx",
+        "columns": null
+      },
+      "id": "Field_0nl76vt"
+    },
+    {
+      "label": "Nombre de la empresa",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1ghv09s",
+        "columns": null
+      },
+      "id": "Field_0z1lkuw",
+      "key": "empresa_name"
+    },
+    {
+      "label": "Nombre del titular",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1tfpkze",
+        "columns": null
+      },
+      "id": "Field_0eohlsv",
+      "key": "titular_name",
+      "description": "Primer nombre y apellido"
+    },
+    {
+      "label": "Sector comercial",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0w6ls94",
+        "columns": null
+      },
+      "id": "Field_1753hyc",
+      "key": "sector_name",
+      "description": "(Carnes, juegos, entretenimiento, deportes, comercio, etc...)"
+    },
+    {
+      "label": "Activos",
+      "type": "number",
+      "layout": {
+        "row": "Row_1njfr7h",
+        "columns": null
+      },
+      "id": "Field_0i7ekuk",
+      "key": "activos",
+      "description": "En pesos"
+    },
+    {
+      "label": "¿Tendra musica?",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_05zu3sl",
+        "columns": null
+      },
+      "id": "Field_1i6e2xg",
+      "key": "musica",
+      "readonly": false
+    }
+  ],
+  "type": "default",
+  "id": "formulario",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.15.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.19.0",
+  "schemaVersion": 10
+}
