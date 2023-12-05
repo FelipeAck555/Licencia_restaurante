@@ -11,14 +11,17 @@
       "id": "Field_0nl76vt"
     },
     {
-      "label": "Nombre de la empresa",
+      "label": "Nombre del restaurante",
       "type": "textfield",
       "layout": {
         "row": "Row_1ghv09s",
         "columns": null
       },
       "id": "Field_0z1lkuw",
-      "key": "empresa_name"
+      "key": "empresa_name",
+      "validate": {
+        "required": true
+      }
     },
     {
       "label": "Nombre del titular",
@@ -29,17 +32,25 @@
       },
       "id": "Field_0eohlsv",
       "key": "titular_name",
-      "description": "Primer nombre y apellido"
+      "description": "Primer nombre y apellido",
+      "validate": {
+        "required": true
+      }
     },
     {
-      "label": "Cedula",
+      "label": "Cédula",
       "type": "number",
       "layout": {
         "row": "Row_1tfpkze",
         "columns": null
       },
       "id": "Field_07c1aai",
-      "key": "id_name"
+      "key": "id_name",
+      "validate": {
+        "max": 9999999999,
+        "min": 9999999,
+        "required": true
+      }
     },
     {
       "label": "Estrato",
@@ -50,7 +61,11 @@
       },
       "id": "Field_1vlsts2",
       "key": "estrato",
-      "defaultValue": 3
+      "validate": {
+        "min": 1,
+        "max": 5,
+        "required": true
+      }
     },
     {
       "label": "Activos",
@@ -61,20 +76,13 @@
       },
       "id": "Field_0i7ekuk",
       "key": "activos",
-      "description": "En pesos"
+      "description": "En pesos",
+      "validate": {
+        "required": true
+      }
     },
     {
-      "label": "¿Tiene RUT?",
-      "type": "checkbox",
-      "layout": {
-        "row": "Row_05zu3sl",
-        "columns": null
-      },
-      "id": "Field_17s7ygv",
-      "key": "rut_check"
-    },
-    {
-      "label": "¿Tendra musica?",
+      "label": "¿Aplicará a Sayco y Acinpro?",
       "type": "checkbox",
       "layout": {
         "row": "Row_05zu3sl",

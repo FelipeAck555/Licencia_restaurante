@@ -1,7 +1,7 @@
 {
   "components": [
     {
-      "text": "# Pago Sayco y acinpro",
+      "text": "# Pago Sayco y Acinpro",
       "label": "Text view",
       "type": "text",
       "layout": {
@@ -11,7 +11,7 @@
       "id": "Field_1l1dvki"
     },
     {
-      "text": "Cantidad a pagar",
+      "text": "Pago requerido",
       "label": "Text view",
       "type": "text",
       "layout": {
@@ -25,7 +25,7 @@
       "type": "textfield",
       "layout": {
         "row": "Row_1wo82rj",
-        "columns": null
+        "columns": 12
       },
       "id": "Field_0wt79yc",
       "key": "sayco",
@@ -40,7 +40,8 @@
         "columns": null
       },
       "id": "Field_1dmpk3f",
-      "key": "pago"
+      "key": "pago",
+      "description": "En pesos"
     }
   ],
   "type": "default",

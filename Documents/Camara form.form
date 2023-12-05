@@ -1,39 +1,38 @@
 {
   "components": [
     {
-      "text": "# ¿Cambios realizados?",
+      "text": "# ¿Formulario correcto?",
       "label": "Text view",
       "type": "text",
       "layout": {
-        "row": "Row_0cs6pnn",
+        "row": "Row_1hewqhf",
         "columns": null
       },
-      "id": "Field_0o6l7os"
+      "id": "Field_111i40w"
     },
     {
       "values": [
         {
           "label": "Si",
-          "value": "Si"
+          "value": "si"
         },
         {
           "label": "No",
-          "value": "No"
+          "value": "no"
         }
       ],
-      "label": "¿Se aplicaron las recomendaciones hechas por el agente?",
+      "label": "¿Todos los datos son correctos?",
       "type": "select",
       "layout": {
-        "row": "Row_1ffks0w",
+        "row": "Row_0o28s16",
         "columns": null
       },
-      "id": "Field_1n0y83f",
-      "key": "cambios_salud",
-      "defaultValue": "<none>"
+      "id": "Field_08hdjzn",
+      "key": "camara_check"
     }
   ],
   "type": "default",
-  "id": "cualquiercosa",
+  "id": "camara_form",
   "exporter": {
     "name": "Camunda Modeler",
     "version": "5.15.2"

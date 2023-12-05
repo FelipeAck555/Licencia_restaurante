@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_0mtt12g" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.15.2" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.19.0">
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_0mtt12g" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.15.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.19.0">
   <bpmn:collaboration id="Collaboration_17hhb4v">
     <bpmn:participant id="Participant_1lxakyn" name="Formato de revision" processRef="Calidad" />
   </bpmn:collaboration>
@@ -14,15 +14,15 @@
       <bpmn:terminateEventDefinition id="TerminateEventDefinition_081enek" />
     </bpmn:endEvent>
     <bpmn:sequenceFlow id="Flow_1is0voh" sourceRef="Activity_1y039jg" targetRef="Event_1afcbix" />
-    <bpmn:userTask id="Activity_0i9eokp" name="Enviar agente a revision" camunda:formRef="agente_form" camunda:formRefBinding="latest">
-      <bpmn:incoming>Flow_0wcq6g3</bpmn:incoming>
-      <bpmn:outgoing>Flow_16ahgjg</bpmn:outgoing>
-    </bpmn:userTask>
     <bpmn:businessRuleTask id="Activity_1y039jg" name="Cantidad de fallas en la lista" camunda:resultVariable="Procedimiento" camunda:decisionRef="ClasificacionIr" camunda:mapDecisionResult="singleEntry">
       <bpmn:extensionElements />
       <bpmn:incoming>Flow_16ahgjg</bpmn:incoming>
       <bpmn:outgoing>Flow_1is0voh</bpmn:outgoing>
     </bpmn:businessRuleTask>
+    <bpmn:userTask id="Activity_0i9eokp" name="Enviar agente a revision" camunda:formRef="agente_form" camunda:formRefBinding="latest">
+      <bpmn:incoming>Flow_0wcq6g3</bpmn:incoming>
+      <bpmn:outgoing>Flow_16ahgjg</bpmn:outgoing>
+    </bpmn:userTask>
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_17hhb4v">
@@ -42,19 +42,19 @@
           <dc:Bounds x="832" y="245" width="76" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_0b23yhl_di" bpmnElement="Activity_0i9eokp">
-        <dc:Bounds x="360" y="180" width="100" height="80" />
-      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_16es29f_di" bpmnElement="Activity_1y039jg">
         <dc:Bounds x="620" y="180" width="100" height="80" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0b23yhl_di" bpmnElement="Activity_0i9eokp">
+        <dc:Bounds x="410" y="180" width="100" height="80" />
+      </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_0wcq6g3_di" bpmnElement="Flow_0wcq6g3">
         <di:waypoint x="288" y="220" />
-        <di:waypoint x="360" y="220" />
+        <di:waypoint x="410" y="220" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_16ahgjg_di" bpmnElement="Flow_16ahgjg">
-        <di:waypoint x="460" y="220" />
+        <di:waypoint x="510" y="220" />
         <di:waypoint x="620" y="220" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_1is0voh_di" bpmnElement="Flow_1is0voh">

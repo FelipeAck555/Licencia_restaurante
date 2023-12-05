@@ -21,7 +21,7 @@
       "id": "Field_0dw95vr"
     },
     {
-      "label": "nombre",
+      "label": "Nombre del establecimiento autorizado",
       "type": "textfield",
       "layout": {
         "row": "Row_161utnl",
@@ -33,7 +33,7 @@
       "disabled": true
     },
     {
-      "text": "propietario",
+      "text": "Propietario:",
       "label": "Text view",
       "type": "text",
       "layout": {
@@ -43,7 +43,7 @@
       "id": "Field_1dmw7h1"
     },
     {
-      "label": "nombre",
+      "label": "Nombre del titular",
       "type": "textfield",
       "layout": {
         "row": "Row_1s3g1p1",
@@ -55,7 +55,7 @@
       "readonly": true
     },
     {
-      "text": "cedula",
+      "text": "Cédula:",
       "label": "Text view",
       "type": "text",
       "layout": {
@@ -65,7 +65,7 @@
       "id": "Field_127uzd6"
     },
     {
-      "label": "numero",
+      "label": "Número de identificación",
       "type": "number",
       "layout": {
         "row": "Row_1xqr3bj",
